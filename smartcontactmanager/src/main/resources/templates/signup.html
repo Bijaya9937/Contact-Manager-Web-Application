@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Signup Page</title>
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+	crossorigin="">
+
+<link rel="stylesheet" th:href="@{/css/base.css}">
+</head>
+<body>
+
+	<section class="signupContainer">
+
+		<div class="outer-signup">
+			
+			<div th:if="${session.message}" th:classappend="${session.message.type}" class="alert col-md-6" align="center" id="signupMessage" role="alert">
+  				<p th:text="${session.message.content}"></p>
+  				
+			</div>
+
+			<div class="signupMainContainer">
+				<div class="signupInfoContainer">
+					<div class="signupInfoHeader">
+						<h4>Grow Your Network</h4>
+						<p>Welcome to our smart contact management platform. Simplify
+							your networking and stay organized with powerful tools. Sign up
+							today to get started on a more efficient networking journey</p>
+							
+							<a th:href="@{signin}"><button type="button" class="btn btn-outline-warning ">LOGIN</button></a>
+					</div>
+
+
+
+				</div>
+				<div class="signupPageContainer">
+					<div class="outer-div">
+						<div class="loginForm">
+							
+							<form th:action="@{/do_register}" method="post" th:object="${user}" id="signup_formId" class="login__form">
+								<h1 class="login__title">Register</h1>
+
+								<div class="login__inputs">
+									<div class="login__box">
+										<input name="name" th:value="${user.name}" type="text" placeholder="Name" required 
+											class="login__input">
+									</div>
+									<div class="login__box">
+										<input name="email" th:value="${user.email}" type="email" placeholder="Email ID" required
+											class="login__input">
+									</div>
+									<div class="login__box">
+										<input name="number" th:value="${user.number}" type="text" placeholder="Phone Number" required
+											class="login__input">
+									</div>
+
+									<div class="login__box">
+										<input name="password" th:value="${user.password}" type="password" placeholder="Password" required
+											class="login__input">
+									</div>
+								</div>
+
+								<button type="submit" class="btn btn-outline-warning" id="login__button">REGISTER</button>
+
+								<div class="login__register">
+									Already have an account? <a th:href="@{signin}">Login</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+</body>
+</html>

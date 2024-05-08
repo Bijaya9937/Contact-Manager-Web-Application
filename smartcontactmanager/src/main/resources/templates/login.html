@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+   <html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" th:href="@{/css/login.css}">
+
+      <title>Login Form</title>
+   </head>
+   <body>
+   	<section class="text-box">
+      <div class="outer-div">
+      <div  class="loginForm">
+         <form th:action="@{/do-login}" method="post" action="#" id="login_formId" class="login__form">
+            <h1 class="login__title">Login</h1>
+            <div th:if="${param.error}" class="alert alert-danger">	
+            	Invalid Username or Password
+            </div>
+            <div th:if="${param.logout}" class="alert alert-success">	
+            	You have successfully logged out
+            </div>
+
+            <div class="login__inputs">
+               <div class="login__box">
+                  <input type="email" name="username" placeholder="Email ID" required class="login__input">
+                  <i class="ri-mail-fill"></i>
+               </div>
+
+               <div class="login__box">
+                  <input type="password" name="password" placeholder="Password" required class="login__input">
+                  <i class="ri-lock-2-fill"></i>
+               </div>
+            </div>
+
+            <div class="login__check">
+               <div class="login__check-box">
+                  <input type="checkbox" class="login__check-input" id="user-check">
+                  <label for="user-check" class="login__check-label">Remember me</label>
+               </div>
+
+               <a href="#" class="login__forgot">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-outline-warning" id="login__button">LOGIN</button>
+
+            <div class="login__register">
+               Don't have an account? <a th:href="@{/signup}">Register</a>
+            </div>
+         </form>
+         </div>
+        </div>
+      </section>
+   </body>
+</html>

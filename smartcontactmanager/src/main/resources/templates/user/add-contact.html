@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="user/user_base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Dashboard Page</title>
+</head>
+<body>
+
+	<section>
+
+		<div class="card">
+			<div class="card-body">
+				<h3 class="text-center heading">Add Contact</h3>
+				<div class="container-fluid mt-4">
+					<div class="row">
+						<div class="col-md-10 offset-md-1">
+							<form th:action="@{/user/save-contact}" method="POST"
+								th:object="${contact}" enctype="multipart/form-data"
+								class="mt-2">
+								<div class="col-auto">
+
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+											<div class="input-group-text"><i class="fa-regular fa-user"></i></div>
+										</div>
+										<input type="text" name="name" class="form-control"
+											id="inlineFormInputGroup" placeholder="Enter Name">
+									</div>
+								</div>
+								<div class="col-auto">
+
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+											<div class="input-group-text"><i class="fa-regular fa-plus"></i></div>
+										</div>
+										<input type="text" name="nickName" class="form-control"
+											id="inlineFormInputGroup" placeholder="Enter Nickname">
+									</div>
+								</div>
+								<div class="col-auto">
+
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+											<div class="input-group-text"><i class="fa-regular fa-envelope"></i></div>
+										</div>
+										<input type="email" name="email" class="form-control"
+											id="inlineFormInputGroup" placeholder="Enter Email">
+									</div>
+								</div>
+								<div class="col-auto">
+
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+											<div class="input-group-text"><i class="fa-solid fa-briefcase"></i></div>
+										</div>
+										<input type="text" name="work" class="form-control"
+											id="inlineFormInputGroup" placeholder="Enter Work">
+									</div>
+								</div>
+								<div class="col-auto">
+
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+											<div class="input-group-text"><i class="fa-solid fa-phone"></i></div>
+										</div>
+										<input type="text" name="phone" class="form-control"
+											id="inlineFormInputGroup" placeholder="Enter Phone">
+									</div>
+								</div>
+								<div class="col-auto">
+
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+											<div class="input-group-text"><i class="fa-brands fa-linkedin"></i></div>
+										</div>
+										<input type="text" name="linkedin" class="form-control"
+											id="inlineFormInputGroup" placeholder="Enter Linkedin ID">
+									</div>
+								</div>
+								<div class="col-auto">
+
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+											<div class="input-group-text"><i class="fa-brands fa-instagram"></i></div>
+										</div>
+										<input type="text" name="instagram" class="form-control"
+											id="inlineFormInputGroup" placeholder="Enter Instagram ID">
+									</div>
+								</div>
+								<div class="col-auto">
+
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<div class="input-group-text"><i class="fa-brands fa-whatsapp"></i></div>
+										</div>
+										<input type="text" name="whatsapp" class="form-control"
+											id="inlineFormInputGroup" placeholder="Enter Whatsapp">
+									</div>
+								</div>
+								<div class="custom-file mb-3">
+									<input type="file" name="profileImage" />
+								</div>
+								<div class="container text-center mb-3">
+									<button type="submit" class="btn btn-warning">Save Contact</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+</body>
+</html>

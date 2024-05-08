@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="user/user_base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Dashboard Page</title>
+</head>
+<body>
+
+	<section class="signupContainer">
+		<form th:action="@{/user/updatedUserData}" method="post"
+		th:object="${user}" enctype="multipart/form-data" >
+		<div class="outer-signup">
+
+			<div th:if="${session.message}"
+				th:classappend="${session.message.type}" class="alert col-md-6"
+				align="center" id="signupMessage" role="alert">
+				<p th:text="${session.message.content}"></p>
+
+			</div>
+
+			<div class="signupMainContainer">
+				<div class="signupInfoContainer">
+					<div class="signupInfoLeader">
+					<div class="signupInfoHeader">
+						<!--  <form id="form1" th:action="@{/user/userPicName}" method="post" th:object="${user}">-->
+						<div class="userProfileUpdateImage">
+						
+							<img th:src="@{'/images/'+${user.imageUrl}}" alt="" />
+							<div class="custom-file ">
+									<input type="file" name="profileImage" />
+								</div>
+						</div>
+						
+							<div class="userNameField my-3 px-1">
+								<input name="name" th:value="${user.name}" type="text"
+								placeholder="" required class="login__input">
+							</div>
+					
+						
+						<!-- </form>-->
+						</div>
+					</div>
+
+
+
+				</div>
+				<div class="signupPageContainer">
+					<div class="outer-div">
+						<div id="signup_formId" class="login__form">
+
+							<!-- <form id="form2" th:action="@{/user/updatedUserData}" method="post"
+								th:object="${user}" id="signup_formId" class="login__form"> -->
+								<h1 class="login__title">Update User Profile</h1>
+
+								<div class="login__inputs">
+									<div class="login__box">
+										<input name="email" th:value="${user.email}" type="email"
+											placeholder="Email ID" required class="login__input">
+									</div>
+									<div class="login__box">
+										<input name="number" th:value="${user.number}" type="text"
+											placeholder="Phone Number" required class="login__input">
+									</div>
+
+									<div class="login__box">
+										<input name="about" th:value="${user.about}"
+											type="text" placeholder="About" required
+											class="login__input">
+									</div>
+								</div>
+
+								<button type="submit" class="btn btn-outline-warning"
+									id="login__button">UPDATE</button>
+
+								<div class="login__register">
+									Don't want to update ?<a href="#"> Back</a>
+								</div>
+							<!--  </form> -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</form>
+	</section>
+
+</body>
+</html>

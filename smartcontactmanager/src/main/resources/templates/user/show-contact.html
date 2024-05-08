@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="user/user_base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Dashboard Page</title>
+</head>
+<body>
+
+<section id="showContactSection">
+<div class="showContactDiv">
+	<div class="showContactImgDiv">
+		<img th:src="@{'/images/'+${contact.imageUrl}}" alt="" />
+		<h2><span th:text="${contact.name}"></span>(<span th:text="${contact.nickName}"></span>)</h2>
+	</div>
+	
+	<div class="showContactDetails">
+		<table class="table table-striped">
+			<tbody>
+    			<tr>
+      				<th scope="row">Email Address :</th>
+      				<td th:text="${contact.email}"></td>
+      				
+    			</tr>
+    			<tr>
+      				<th scope="row">Work :</th>
+      				<td th:text="${contact.work}"></td>
+      				
+    			</tr>
+    			<tr>
+      				<th scope="row">Phone Number :</th>
+      				<td th:text="${contact.phone}"></td>
+      				
+    			</tr>
+    			<tr>
+      				<th scope="row">Linkedin ID :</th>
+      				<td th:text="${contact.linkedin}"></td>
+      				
+    			</tr>
+    			<tr>
+      				<th scope="row">Instagram ID :</th>
+      				<td th:text="${contact.instagram}"></td>
+      				
+    			</tr>
+    			<tr>
+      				<th scope="row">Whatsapp :</th>
+      				<td th:text="${contact.whatsapp}"></td>
+      				
+    			</tr>
+    		</tbody>
+		</table>
+	
+		
+	</div>
+</div>
+
+
+</section>
+
+</body>
+</html>

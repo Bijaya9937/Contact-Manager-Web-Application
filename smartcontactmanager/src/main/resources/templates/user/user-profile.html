@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="user/user_base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>User Profile Page</title>
+</head>
+<body>
+
+	<section class="userProfileSection">
+	<div class="userProfile">
+		<div class="showContactDiv">
+			<div class="showContactImgDiv">
+				<img th:src="@{'/images/'+${user.imageUrl}}" alt="" />
+				<div class="userNameDiv">
+					<h2>
+					<span th:text="${user.name}"></span>
+				</h2>
+				</div>
+				
+			</div>
+
+			<div class="showContactDetails">
+				<table class="table table-striped">
+					<tbody>
+						<tr>
+							<th scope="row">Email Address :</th>
+							<td th:text="${user.email}"></td>
+
+						</tr>
+						<tr>
+							<th scope="row">Phone Number :</th>
+							<td th:text="${user.number}"></td>
+
+						</tr>
+						<tr>
+							<th scope="row">User Role :</th>
+							<td th:text="${user.role}"></td>
+
+						</tr>
+
+						<tr>
+							<th scope="row">About :</th>
+							<td th:text="${user.about}"></td>
+
+						</tr>
+					</tbody>
+				</table>
+
+
+			</div>
+		</div>
+	</div>
+	</section>
+
+</body>
+</html>

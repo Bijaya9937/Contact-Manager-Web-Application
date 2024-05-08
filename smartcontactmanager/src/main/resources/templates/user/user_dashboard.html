@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="user/user_base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Dashboard Page</title>
+</head>
+<body>
+
+<section>
+
+<div class="userDashboardCard">
+			<div class="userDashboardHeading text-center">			
+				<h2>Welcome to User Dashboard</h2>
+			</div>
+			<div class="parentUserDashboardMessage text-center">
+			<div class="userDashboardMessage text-center">
+				<p>"Connecting made easy, relationships well-managed."</p>
+			</div>
+			</div>
+			
+			<div class="lowerDesign">
+				<div class="userDashboardLowerText text-center">
+					<p id="text">Unlock the power of streamlined communication and effortless organization.</p>
+				</div>
+				<div class=" userDashboardLowerButton text-center">
+					<a th:href="@{/user/view-contact/0}"> <button type="button" class="btn btn-custom">Get Started</button></a>
+				</div>
+			</div>
+		</div>
+</section>
+
+</body>
+</html>

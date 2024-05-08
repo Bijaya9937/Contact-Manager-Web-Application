@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+</head>
+<body>
+	<section class="text-box">
+		<div>
+			<h3>
+				Welcome to <span class="animate-charcter">Smart Contact
+					Manager </span>
+			</h3>
+			<p class="topQuote">Stay connected, Stay organized, Supercharge your
+				relationships.</p>
+			<br>
+			<a th:href="@{/user/dashboard}" ><button type="button" class="btn btn-outline-warning">GET
+				MANAGE</button></a>
+		</div>
+	</section>
+
+	<section class="features">
+		<h3>Smart Contact Insights</h3>
+		<p>Harness the power of AI and data analytics to gain
+			unprecedented insights into your contacts. Our application provides
+			real-time intelligence on relationship strengths, communication
+			patterns, and actionable recommendations. Unlock the potential of
+			your network like never before.</p>
+		<div class="row">
+			<div class="features-col">
+				<h5>AI-Driven Contact Intelligence</h5>
+				<p>Our Smart Contact Insights feature harnesses the power of AI
+					to provide you with real-time intelligence about your contacts,
+					helping you strengthen relationships and make informed decisions.</p>
+			</div>
+			<div class="features-col">
+
+				<h5>Predictive Analytics for Networking Success</h5>
+				<p>Uncover hidden opportunities and predict future trends by
+					utilizing predictive analytics and data-driven insights that
+					enhance your contact management strategy.</p>
+			</div>
+			<div class="features-col">
+				<h5>Stay Ahead with Smart Insights</h5>
+				<p>With Smart Contact Insights, you'll not only manage contacts
+					more efficiently but also stay one step ahead, ensuring you never
+					miss a crucial connection or opportunity in your network.</p>
+			</div>
+		</div>
+	</section>
+	<section class="vision">
+		<h3>Our Vision</h3>
+		<p>Empowering individuals and businesses with innovative contact
+			management solutions to forge meaningful connections and thrive in
+			the digital era.</p>
+		<div class="row">
+			<div class="vision-col">
+				<img th:src="@{/images/banner1.jpg}" alt="" />
+				<div class="layer">
+					<h6>Empowering Digital Connections</h6>
+					<p>Empowering digital connections through intuitive tools and
+						actionable insights.</p>
+				</div>
+			</div>
+
+
+			<div class="vision-col">
+				<img th:src="@{/images/banner8.jpg}" alt="" />
+				<div class="layer">
+					<h6>Driving Networking Success</h6>
+					<p>Driving networking success by enhancing contact management
+						efficiency and effectiveness.</p>
+				</div>
+			</div>
+
+
+
+			<div class="vision-col">
+				<img th:src="@{/images/banner7.jpg}" alt="" />
+				<div class="layer">
+					<h6>Transforming Contact Connections</h6>
+					<p>Transforming contact connections with cutting-edge
+						technology and innovation.</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="techContainer">
+
+		<section class="tech">
+			<div class="tech-left">
+			<div class="box">
+				<h3>Our Technology Stack</h3>
+				<p>Crafting Excellence with Every Line of Code</p>
+			</div>
+				
+			</div>
+			<div class="tech-right">
+				<div class="right-up">
+					<div class="tech-logo"> <img th:src="@{/images/html-logo.png}" class="largeLogo" alt="" /> </div>
+					<div class="tech-logo"> <img th:src="@{/images/css-logo.png}" class="largeLogo" alt="" /> </div>
+					<div class="tech-logo"> <img th:src="@{/images/js-logo.png}" class="largeLogo" alt="" /> </div>
+					<div class="tech-logo"> <img th:src="@{/images/thymeleaf-logo.png}" class="smallLogo" alt="" /> </div>
+					
+				</div>
+				<div class="right-down">
+				<div class="tech-logo"> <img th:src="@{/images/java-logo.png}" class="largeLogo" alt="" /> </div>
+					<div class="tech-logo"> <img th:src="@{/images/spring-boot-logo.png}" class="largeLogo" alt="" /> </div>
+					<div class="tech-logo"> <img th:src="@{/images/s-security-logo.png}" class="largeLogo" alt="" /> </div>
+					<div class="tech-logo"> <img th:src="@{/images/hibernate-logo.png}" class="smallLogo" alt="" /> </div>
+				</div>
+			</div>
+
+		</section>
+	</section>
+	<section><div class="hoverBox"><div class="hoverDiv"></div></div></section>
+	<section class="message">
+		<h2>Elevate contact management efficiency and streamline it with ease</h2>
+		<button type="button" class="btn btn-custom" onclick="contactus()">CONTACT US</button>
+	</section>
+	<section><div class="hoverBox"><div class="hoverDiv"></div></div></section>
+
+</body>
+</html>

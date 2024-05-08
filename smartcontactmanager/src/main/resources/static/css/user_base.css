@@ -1,0 +1,1113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Poppins', sans-serif;
+}
+.parentSectionOfAll{
+	display:flex;
+	flex-direction:column;
+}
+
+body {
+    touch-action: pan-y;
+ 	background-color:#e2e2e2;
+    overflow-x:hidden;
+}
+
+.user_dashboard{
+	background:url("../images/user-dashboard-background.png");
+	min-height:100vh;
+	width:100%;
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	overflow-x:hidden;
+}
+.add-contact{
+	min-height:105vh;
+	width:100%;
+	background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../images/addContactBackground.jpg");
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	overflow-x:hidden;
+}
+.view-contact{
+	min-height:100vh;
+	width:100%;
+	background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../images/view-contact.jpg");
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	overflow-x:hidden;
+}
+.show-contact{
+	min-height:100vh;
+	width:100%;
+	background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../images/view-contact.jpg");
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	overflow-x:hidden;
+}
+.user-profile{
+	min-height:100vh;
+	width:100%;
+	background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../images/view-contact.jpg");
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	overflow-x:hidden;
+}
+.setting {
+	min-height:100vh;
+	width:100%;
+	background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../images/view-contact.jpg");
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	overflow-x:hidden;
+}
+.user-profile{
+	min-height:100vh;
+	width:100%;
+	background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../images/view-contact.jpg");
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	overflow-x:hidden;
+}
+.user-update-profile{
+	min-height:100vh;
+	width:100%;
+	background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../images/view-contact.jpg");
+	background-position:center;
+	background-size:cover;
+	position:relative;
+	overflow-x:hidden;
+}
+
+
+
+
+
+
+.userBaseNav{
+	display:flex;
+	background-color:#0b877f;
+	width:100%;
+	height:12vh;
+	padding:1% 3%;
+	justify-content: space-between;
+	align-items:center;
+	overflow-x:hidden;
+}
+nav h5{
+	margin-left:20px;
+	margin-bottom:0px;
+}
+nav img{
+	height:50px;
+	width:50px;
+	margin-top:5px;
+	font-size:30px;
+	font-weight:500;
+}
+nav a{
+	display:flex;
+	align-items:center;
+	color:#FFFFFF;
+	text-decoration:none;
+	
+}
+
+.nav-items{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	flex:1;
+	text-align:right;
+}
+.nav-items ul{
+	margin-bottom:0px;
+}
+
+.nav-items ul li{
+	list-style:none;
+	display:inline-block;
+	padding:8px 12px;
+	position:relative;
+}
+
+.nav-items ul li a {
+	color:#ffffff;
+	text-decoration:none;
+	font-size:14px;
+	font-weight:400;
+}
+
+.nav-items ul li::after{
+	content:'';
+	width:0%;
+	height:4px;
+	background:#fa9393;
+	display:block;
+	margin:auto;
+	transition:0.5s;
+}
+
+
+.nav-items ul li:hover::after{
+	
+	width:100%;
+}
+.fasUser{
+	font-size:30px;
+	color:white;
+}
+.fasUser:hover{
+	color:#fa9393;
+}
+.fasLi{
+	padding:0;
+}
+
+nav .fas{
+	display:none;
+}
+@media(max-width:1000px){
+	nav .fas{
+		display:none;
+	}
+	.nav-items ul li{
+	display:block;
+	}
+	.nav-items{
+	position:absolute;
+	background:#F44336;
+	height:100vh;
+	width:200px;
+	top:0;
+	right:-200px;
+	text-align:left;
+	z-index:2;
+	transition:1s;
+	}
+	/*nav .fas{
+	display:block;
+	color:#ffffff;
+	margin:10px;
+	font-size:20px;
+	cursor:pointer;
+	}*/
+	.nav-items ul{
+		padding:20px;
+	}
+	
+}
+
+/* Footer  */
+
+.footer{
+	width:100%;
+	text-align:center;
+	padding:30px 0;
+	
+}
+.footer p{
+	font-size:14px;
+}
+
+.footer h4{
+	margin-bottom : 25px;
+	margin-top:20px;
+	font-weight:600;
+}
+
+.icons .fa-brands{
+	color:#f44336;
+	margin:0 13px;
+	cursor:pointer;
+	padding:18px 0;
+}
+.fa-heart-o{
+	color:#f44336;
+}
+
+/* Hover Div */
+
+.hoverBox
+{
+	width:80%;
+	margin:auto;
+	height:200px;
+	display:flex;
+	justify-content:center;
+}
+.hoverBox::after{
+	content:'';
+	width:0%;
+	height:10px;
+	background:#f44336;
+	display:block;
+	margin:auto;
+	transition:0.3s;	
+}
+.hoverBox:hover::after{
+	width:80%;
+}
+@media(max-width:1000px){
+	
+	.hoverBox{
+	height:0px;
+	}
+	.techContainer{
+		margin:100px 0px;
+	}
+}
+
+
+
+
+/* #########  User Menubar ######### */
+/* #########  User Menubar ######### */
+/* #########  User Menubar ######### */
+/* #########  User Menubar ######### */
+/* #########  User Menubar ######### */
+/* #########  User Menubar ######### */
+
+
+.sidebar{
+	height:88vh;
+	width:250px;
+	left:-250px;
+	position:absolute;
+	background-color:#03aba0;
+	z-index:2;
+	transition:1s;
+}
+.sidebar a{
+	display:block;
+	text-decoration:none;
+	color:white;
+	width:100%;
+	padding:20px 30px;
+}
+.sidebar a:hover{
+	color:#007BFF;
+	background-color:white;
+}
+.sidebar i{
+	margin-right:12px;
+}
+
+#closeBtn{
+	font-size:20px;
+	margin-bottom:10px;
+	margin-top:25px;
+	margin-left:85%;
+	cursor:pointer;
+	
+}
+#closeBtn:hover{
+	color:white;
+}
+
+#dashboardDiv{
+	margin-top:30px;
+}
+.openbtnMainDiv{
+	width:15%;
+}
+.openmenubtnDiv{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:45px;
+	width:45px;
+	margin:20px auto;
+	border:5px solid #0b877f;
+	color:#0b877f;
+	border-radius:10px;
+	cursor:pointer;
+}
+.openmenubtnDiv i{
+	font-size:30px;
+}
+@media(max-width:1000px)
+{
+	.sidebar{
+	width:250px;
+	height:89.25%;
+	position:absolute;
+	background-color:#03aba0;
+	}
+	.openbtnMainDiv{
+		width:10%;
+	}
+	.openmenubtnDiv{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:35px;
+	width:35px;
+	margin-left:10px;
+	border:5px solid #0b877f;
+	color:#0b877f;
+	border-radius:10px;
+	cursor:pointer;
+	}
+	.openmenubtnDiv i{
+		font-size:20px;
+	}
+
+}
+
+
+/* #########  Content Div ######### */
+/* #########  Content Div ######### */
+/* #########  Content Div ######### */
+/* #########  Content Div ######### */
+/* #########  Content Div ######### */
+/* #########  Content Div ######### */
+/* #########  Content Div ######### */
+/* #########  Content Div ######### */
+
+.content{
+	width:100%;
+	height:88vh;
+	display:flex;
+}
+.maincontent{
+	opacity:0.9;
+	width:60%;
+	margin:20px auto;
+}
+.maincontainer{
+	width:85%;
+}
+
+@media(max-width:1000px)
+{
+	.maincontainer{
+		width:100%;
+	}
+	.maincontent{
+		width:90%;
+		margin:20px auto;
+	}
+}
+
+
+/*################################ USER DASHBOARD ##################################*/
+/*################################ USER DASHBOARD ##################################*/
+/*################################ USER DASHBOARD ##################################*/
+/*################################ USER DASHBOARD ##################################*/
+/*################################ USER DASHBOARD ##################################*/
+/*################################ USER DASHBOARD ##################################*/
+/*################################ USER DASHBOARD ##################################*/
+
+.user_dashboard .maincontent{
+	margin:30px 0px;
+	width:90%;
+}
+
+/*.userDashboardCard{
+	display:flex;
+	background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../images/user-dashboard-cartoon-1.jpg");
+	background-position:center;
+	background-size:cover;
+	border-radius:20px;
+	box-shadow:0px 0px 20px 0px rgba(0,0,0,0.4);
+	height:80vh;
+	width:100%;
+	margin:auto;
+}*/
+.user_dashboard h2{
+	background-image: linear-gradient(45deg, blue, #ffcc00);
+	-webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+	font-weight:bold;
+	margin:100px 0px 20px 0px;
+}
+
+.lowerDesign{
+	margin:10% auto;
+}
+
+
+.btn-custom {
+    background-color: #752dfa; /* Change this color to match your button style */
+    color: #fff; /* Text color */
+    border: 2px solid #fff; /* Remove the default border */
+    transition: border 0.3s ease-out-in; /* Add a smooth transition for the border */
+}
+
+/* On hover, make the button outlined */
+.btn-custom:hover {
+    background-color: #d9b6d9; /* Remove the background color on hover */
+    border:2px solid #000;  /* Add an outline border on hover */
+    color: #000; /* Change text color on hover to match the outline color */
+}
+
+.userDashboardLowerButton{
+	margin:50px auto;
+}
+
+.userDashboardLowerText p{
+	color:white;
+	font-weight:400;
+	font-size:40px;
+	
+}
+
+.char{
+            font-size: 39px;
+            font-weight:400;
+            animation: an 1s ease-out 1 both;
+            display: inline-block;
+        }
+
+        @keyframes an{
+            from{
+                opacity: 0;
+                transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+            }
+            to{
+            	background-image: linear-gradient(45deg, blue, #ffcc00);
+			-webkit-background-clip: text;
+  			background-clip: text;
+  			color: transparent;
+                opacity: 1;
+                transform: perspective(500px) translate3d(0, 0, 0);
+            }
+        }
+
+
+/*.userDashboardMessage p{
+	font-size:18px;
+	color:white;
+}*/
+
+.userDashboardMessage p {
+  color: #000;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  font-weight:300;
+  font-style:italic;
+}
+
+@media(max-width:1000px)
+{
+	.user_dashboard .maincontent{
+	margin:30px auto;
+	width:90%;
+}
+	.user_dashboard h2{
+		margin-top:30px;
+	}
+	.userDashboardCard{
+	display:block;
+	}
+	.userDashboardLowerText p{
+	margin-top:50px;
+	color:white;
+	font-weight:400;
+	font-size:20px;
+	}
+
+	.char{
+	font-size: 20px;
+    font-weight:400;
+    animation: an 1s ease-out 1 both;
+    display: inline-block;
+    }
+
+    @keyframes an{
+    	from{
+    		opacity: 0;
+        	transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    	}
+    	to{
+    		background-image: linear-gradient(45deg, blue, #ffcc00);
+			-webkit-background-clip: text;
+  			background-clip: text;
+  			color: transparent;
+        	opacity: 1;
+        	transform: perspective(500px) translate3d(0, 0, 0);
+    	}
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############## Add Contact Page ################ */
+/* ############## Add Contact Page ################ */
+/* ############## Add Contact Page ################ */
+/* ############## Add Contact Page ################ */
+/* ############## Add Contact Page ################ */
+
+
+.input-group-prepend{
+	padding:0.375rem 0.75rem;
+}
+.heading{
+	margin:40px 0px;
+	font-weight:bold;
+	color:#0b877f;
+}
+@media(max-width:1000px)
+{
+	.content{
+	display:flex;
+	flex-direction:column;
+	
+	}
+	.add-contact{
+		min-height:130vh;
+	}
+	
+}
+
+
+/* ######## View Contact Page ############ */
+/* ######## View Contact Page ############ */
+/* ######## View Contact Page ############ */
+/* ######## View Contact Page ############ */
+/* ######## View Contact Page ############ */
+
+
+.innerViewContainer{
+	background-color:white;
+	/*border-radius:10px;*/
+	padding:10px 40px;
+}
+.viewIcons i{
+	margin:0px 15px 0px 0px;
+	cursor:pointer;
+}
+.viewIcons .fa-trash:hover{
+	color:red;
+}
+.viewIcons .fa-pen-nib:hover{
+	color:#0b877f;
+}
+.viewIcons .fa-eye:hover{
+	color:blue;
+}
+.pagination li a{
+	color:#0b877f;
+}
+
+#deleteFa{
+	color:#2576f7;
+}
+.profile_image img{
+	width:45px;
+	height:45px;
+	object-fit:cover;
+	border-radius:50%;
+}
+.view-contact .maincontent{
+	opacity:0.9;
+	width:80%;
+	margin:20px auto;
+	overflow-x:auto; /*Changes here */
+}
+@media(max-width:1000px)
+{
+	.innerViewContainer{
+	white-space: nowrap;
+    overflow-x: auto;
+    display: inline-block;
+	padding:10px 15px;
+	}
+	
+}
+
+
+.search-container{
+	position:relative;
+}
+
+.search-result{
+	position:absolute;
+	background:white;
+	width:100%;
+	padding:10px;
+	border:1px solid grey;
+	display:none;
+}
+/* ####### Show Contact ####### */
+/* ####### Show Contact ####### */
+/* ####### Show Contact ####### */
+/* ####### Show Contact ####### */
+
+.showContactImgDiv img{
+	width:200px;
+	height:200px;
+	border-radius:50%;
+	object-fit:cover;
+}
+.showContactImgDiv{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}
+.showContactDiv{
+	background:white;
+	margin:20px auto;
+	padding:40px 20px;
+	white-space: nowrap; /* Prevent line breaks */
+  	overflow-x: auto; /* Enable horizontal scrolling */
+  	display: inline-block;
+}
+
+.showContactDetails{
+	margin:20px auto;
+}
+
+.show-contact .content{
+	width:100%;
+	height:100%;
+}
+.show-contact .maincontent{
+	display:flex;
+	justify-content:center;
+	opacity:0.9;
+	width:80%;
+	margin:20px auto;
+	overflow-x:auto;/*Changes here */
+}
+.showContactDetails th{
+	padding:10px 20px;
+}
+.showContactDetails td{
+	padding:10px 20px;
+}
+@media(max-width:750px)
+{
+	.showContactImgDiv{
+		margin:0px 0px 0px 20px;
+		display:block;
+	}
+	#showContactSection{
+		width:100%;
+	}
+	.show-contact .showContactDiv{
+	white-space: nowrap;
+    overflow-x: auto;
+    display: inline-block;
+	padding:10px 15px;
+	}
+	.show-contact .maincontent{
+		margin:5px auto;
+	}
+	.showContactDetails th{
+		padding:10px 10px;
+	}
+	.showContactDetails td{
+		padding:10px 10px 10px 0px;
+	}
+}
+
+
+
+
+/*######## Setting Page #############*/
+/*######## Setting Page #############*/
+/*######## Setting Page #############*/
+/*######## Setting Page #############*/
+
+
+.mainNavbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333; /* Change the background color to your liking */
+  color: #fff; /* Change the text color to your liking */
+  padding: 10px;
+  border-radius:10px;
+  margin:20px 30px;
+}
+.mainNavbar:hover{
+	color:#000;
+	background-color:#e8e6e6;
+}
+.settingDiv h5{
+	margin-left:30px;
+} 
+
+/* Style the bar */
+.bar {
+  flex-grow: 1; /* Allow the bar to expand and take up available space */
+  cursor: pointer;
+}
+
+/* Style the arrow */
+.arrow {
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+/* Style the Font Awesome arrow icon */
+.fa-arrow-right {
+	margin-right:20px;
+	font-size: 25px; /* Adjust the size as needed */
+}
+ 
+ 
+/* ######### Update User Profile ########### */
+/* ######### Update User Profile ########### */
+/* ######### Update User Profile ########### */
+
+
+.signupContainer {
+	width:100%;
+	color:#fff;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform : translate(-50%,-50%);
+	text-align:center;
+}
+
+.signupMainContainer{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	padding:20px 0px;
+	box-sizing:border-box;
+	overflow-x:hidden;
+}
+.signupInfoContainer{
+	border:2px solid hsla(0, 0%, 100%, .7);
+	border-radius:1rem 0 0 1rem;
+	box-sizing:border-box;
+	padding:10px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.signupInfoHeader{
+	margin:2rem auto;
+	width:400px;
+}
+.signupInfoHeader img{
+	height:180px;
+	width:180px;
+	margin:0px auto;
+	border-radius:50%;
+}
+.userUpdateName h3{
+	margin:20px 0px;
+}
+#signupMessage{
+	margin:auto;
+	height:45px;
+	line-height:45px;
+	padding:0px 23px;
+	
+}
+
+@media(max-width:1000px){
+	
+	.user-update-profile .content{
+		height:150vh;
+	}
+	.signupMainContainer{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	}
+	.signupInfoContainer{
+		width:305px;
+		margin:50px 0px 30px 0px;
+		border-radius:1rem;
+	}
+	
+	#signup_formId{
+		border-radius:1rem;
+	}
+}
+
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 0%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 2rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .813rem;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== LOGIN ===============*/
+.loginForm{
+	width:420px;
+	flex-basis:30%;
+	box-sizing:border-box;
+	margin:0px auto;
+}
+#login_formId{
+	border-radius:1rem;
+}
+
+.login__form {
+  position: relative;
+  background-color: hsla(0, 0%, 100%, .01);
+  border: 2px solid hsla(0, 0%, 100%, .7);
+  padding: 2rem 1.5rem;
+  color: var(--white-color);
+  border-radius: 0 1rem 1rem 0;
+}
+
+.login__title {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 2rem;
+  font-weight:550;
+}
+
+.login__inputs, 
+.login__box {
+  display: grid;
+}
+
+.login__inputs {
+  row-gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.login__box {
+	height:45px;
+  grid-template-columns: 1fr max-content;
+  column-gap: .75rem;
+  align-items: center;
+  border: 2px solid hsla(0, 0%, 100%, .7);
+  padding-inline: 1.25rem;
+  border-radius: 1rem;
+}
+
+.login__input, 
+.login__button {
+  border: none;
+  outline: none;
+}
+
+.login__input {
+  width: 100%;
+  background: none;
+  color: var(--white-color);
+}
+.login__input::placeholder {
+  color: var(--white-color);
+}
+
+.login__box i {
+  font-size: 1rem;
+}
+
+.login__check, 
+.login__check-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login__check {
+  margin-bottom: 1rem;
+  font-size: var(--small-font-size);
+}
+
+.login__check-box {
+  column-gap: .5rem;
+}
+
+.login__check-input {
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--white-color);
+}
+
+.login__forgot {
+  color: var(--white-color);
+}
+
+.login__forgot:hover {
+  text-decoration: underline;
+  color:yellow;
+}
+
+#login__button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+ border-radius:1rem;
+}
+
+
+.login__register {
+  font-size: var(--small-font-size);
+  text-align: center;
+}
+
+.login__register a {
+  color: var(--white-color);
+  font-weight: 500;
+}
+
+.login__register a:hover {
+  text-decoration: underline;
+  color:yellow;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media (max-width:1000px){
+	.outer-div{
+		display:flex;
+		align-items:center;
+	}
+	.login__form{
+	width:300px;
+	}
+	.login__title{
+	font-size:25px;
+	font-weight:bold;
+	}
+	.login__inputs{
+		border-radius:1rem;
+	}
+	.login__button{
+	padding:10px;
+	}
+	.login__button:hover{
+	background-color:black;
+	color:white;
+}
+}
+
+
+/* ################## USER PROFILE ######################*/
+/* ################## USER PROFILE ######################*/
+/* ################## USER PROFILE ######################*/
+/* ################## USER PROFILE ######################*/
+
+.userProfileSection{
+	display:flex;
+	justify-content:center;
+}
+.userProfileSection .showContactImgDiv{
+	margin:0px;
+}
+.userProfileSection img{
+	margin:0px auto;
+}
+.userProfileSection .userNameDiv{
+	text-align:center;
+	margin:20px auto;
+}
+
+
+/* ####################### USER PROFILE UPDATE ######################*/
+/* ####################### USER PROFILE UPDATE ######################*/
+/* ####################### USER PROFILE UPDATE ######################*/
+/* ####################### USER PROFILE UPDATE ######################*/
+/* ####################### USER PROFILE UPDATE ######################*/
+/* ####################### USER PROFILE UPDATE ######################*/
+/* ####################### USER PROFILE UPDATE ######################*/
+
+.userUpdateName
+{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.userNameField input{
+	font-size:25px;
+	text-align:center;
+	border:2px solid hsla(0, 0%, 100%, .7);
+	border-radius:1rem;
+	padding:5px 0px;
+	width:250px;
+}
+
+userProfileUpdateImage img{
+	background-size:cover;
+	background-position:center;
+	
+}
+
+.userProfileUpdateImage input{
+	margin:10px 0px;
+	text-align:center;
+	width:240px;
+}
+
+
+
+
+
+/*#####################         Search Image      ######################*/
+/*#####################         Search Image      ######################*/
+/*#####################         Search Image      ######################*/
+/*#####################         Search Image      ######################*/
+/*#####################         Search Image      ######################*/
+
+#searchImg{
+	cursor:pointer;
+}
