@@ -336,6 +336,12 @@ public class UserController {
 		return "/user/change-password";
 	}
 	
+	@GetMapping("/delete-user")
+	public String deleteUser()
+	{
+		return "/user/delete-user";
+	}
+	
 	
 	
 	

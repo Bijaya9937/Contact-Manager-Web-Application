@@ -781,6 +781,9 @@ nav .fas{
 	font-size: 25px; /* Adjust the size as needed */
 }
  
+.mainNavbar .bar i{
+	margin:10px;
+}
  
 /* ######### Update User Profile ########### */
 /* ######### Update User Profile ########### */

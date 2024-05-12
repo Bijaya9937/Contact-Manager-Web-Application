@@ -48,7 +48,7 @@ function contactus(){
   }
 }).then((result) => {
   	if (!result.value || !result.value.name) {
-      Swal.fire('<p><b>ContactHub</b><br><br>Please Fill The Form to Contact With Us<br><br> Welcome Again &#128591 </p>');
+      Swal.fire('<p><b>ContactHub</b><br><br>Thank you so much for visiting us<br><br> Most Welcome &#128591 </p>');
     } else {
       Swal.fire('<p><b>ContactHUB</b><br><br>We got your request. Our team will contact you very soon.<br><br> Thank You For Contacting Us <b>&#128591</b> </p>');
     }
